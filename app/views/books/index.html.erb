@@ -1,4 +1,15 @@
+<% if flash[:success_destroy] %>
+    <p class="success-message">
+        <%= flash[:success_destroy] %>
+    </p>
+<% elsif flash[:error_destroy] %>
+    <p class="error-destroy">
+        <%= flash[:error_destroy] %>
+    </p>
+<% end %>
+
 <h1 class="head">Books</h1>
+
 
 <table>
   <thead>

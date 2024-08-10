@@ -102,6 +102,11 @@ h1 {
     color: green;
 }
 
+.error-destroy {
+    background-color: red;
+    border: 2px solid black;
+    color: white;
+}
 ul {
     margin: 33px;
     padding: 0px 0px 0px 40px;
