@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 33px !important;
+    font-size: 13px;
+}
+
+p {
+    margin: 33px;
+}
+
+/* index page */
+
+.head {
+    font-size: 26px;
+    margin-top: 17.42px;
+    margin-bottom: 17.42px;
+}
+
+th {
+    padding-bottom: 5px;
+}
+
+h2 {
+    margin-top: 17.42px;
+    margin-bottom: 17.42px;
+}
+
+td {
+    padding: 1px 5px 7px;
+}
+
+/* inpout field*/
+
+.field {
+    margin-bottom: 10px
+}
+
+.field-title {
+    padding: 1px 2px;
+}
+
+.field-body {
+    padding: 2px;
+}
+
+.btn-submit {
+    display: block;
+    padding: 1px 6px;
+}
+
+/* show page */
+
+strong {
+    font-family: bold;    
+}
+
+/* edint page */
+
+h1 {
+    margin: 17.42px 0px;
+}
+
+.field-with-error {
+    padding: 2px;
+    background-color: red;
+    display: table;
+}
+
+/* flash messages */
+.alert-field {
+    width: 450px;
+    background-color: #F0F0F0;
+    margin: 0px 0px 20px;
+    padding: 7px 7px 0px;
+    border: 2px solid red;
+}
+
+#alert-head {
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: #CC0000;
+    margin: -7px -7px 0px;
+    padding: 5px 5px 5px 15px;
+}
+
+.alert-message {
+    text-align: left;
+    font-weight: bold;
+    background-color: #CC0000;
+    margin: -7px -7px 0px;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+}
+
+.success-message {
+    color: green;
+}
+
+ul {
+    margin: 33px;
+    padding: 0px 0px 0px 40px;
+}

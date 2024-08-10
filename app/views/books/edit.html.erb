@@ -1,0 +1,33 @@
+<h1>Editing Book</h1>
+
+<%= render 'shared/error_messages' %>
+
+<% title_class = @book.errors[:title].any? ? 'field-with-error' : '' %>
+<% body_class = @book.errors[:body].any? ? 'field-with-error' : '' %>
+    
+<%= form_with model: @book, method: :PATCH do |f| %>
+    <div class="field">
+        <div class="<%= title_class %>">
+          <label for="book-title">Title</label>
+        </div>
+        <div class="<%= title_class %>">
+          <%= f.text_field :title, class: 'field-title' %>
+        </div>
+    </div>
+    
+    <div class="field">
+        <div class="<%= body_class %>">
+          <label for="book-body">Body</label>
+        </div>
+        <div class="<%= body_class %>">
+          <%= f.text_area :body, class: 'field-title' %>
+        </div>
+    </div>
+    <div class="field">
+        <%= f.submit 'Update Book', class: 'btn-submit' %>
+    </div>
+<% end %>
+
+<%= link_to "Show", book_path(@book.id) %>
+|
+<%= link_to "Back", books_path %>
